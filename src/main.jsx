@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Devices from "./pages/devices";
 import DeviceDetail from "./pages/devicedetail";
+import SensorDashboard from "./pages/sensordashboard";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/devices" element={<Devices />} />
         <Route path="/devices/:id" element={<DeviceDetail />} />
+        <Route path="/dashboard" element={<SensorDashboard />} /> {/* ✅ added here */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
